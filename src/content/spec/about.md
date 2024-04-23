@@ -1,7 +1,7 @@
-# 关于
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
-
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+# 关于我
+* 在职程序员，主要从事Web后端的开发工作，偶尔写写前端
+* 游戏玩家，偏爱模拟经营、大战路、RPG类游戏
+* 沉溺于低级趣味，无聊透顶的人
+  
+# 联系我
+Email: admin@kongliu.net
