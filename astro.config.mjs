@@ -26,6 +26,9 @@ const oklchToHex = (str) => {
 export default defineConfig({
   site: "https://fuwari.vercel.app/",
   base: "/",
+  devToolbar: {
+    enabled: false
+  },
   integrations: [
     tailwind(),
     swup({

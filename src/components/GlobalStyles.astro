@@ -257,9 +257,24 @@ color_set({
         opacity: 1;
     }
 }
+@keyframes fade-in-down {
+    0% {
+        transform: translateY(-2rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 .onload-animation {
     opacity: 0;
     animation: 300ms fade-in-up;
+    animation-fill-mode: forwards;
+}
+.onload-animation-down {
+    opacity: 0;
+    animation: 300ms fade-in-down;
     animation-fill-mode: forwards;
 }
 #top-row {

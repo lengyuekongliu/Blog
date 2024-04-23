@@ -2,6 +2,7 @@ export type SiteConfig = {
   title: string
   subtitle: string
 
+  icp?: string
   lang: string
 
   themeHue: number
