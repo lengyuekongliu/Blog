@@ -12,8 +12,8 @@ jobs:
 
       - name: Build
         use: actions/setup-node@master
-        run: npm install 
-        run: npm run build
+      - run: npm install 
+      - run: npm run build
 
       - name: Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
