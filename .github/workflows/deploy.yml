@@ -12,7 +12,7 @@ jobs:
 
       - name: Build
         use: actions/setup-node@master
-      - run: npm install 
+        run: npm install 
         run: npm run build
 
       - name: Deploy
