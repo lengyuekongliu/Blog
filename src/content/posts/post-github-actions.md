@@ -50,6 +50,7 @@ jobs:
                 port: 22
                 script: |
                     cd ~/blog
+                    git pull
                     pnpm build
 
 ```
