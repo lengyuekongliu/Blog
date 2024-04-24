@@ -8,7 +8,8 @@ draft: false
 ---
 
 # 影视类
-* https://www.btnull.org/ 提供网盘下载
+* https://www.btnull.org/   提供网盘下载
+* https://wallhaven.cc/     好看的壁纸网站
 
 # 工具类
 * [IDEA激活](https://zhile.io/2021/11/29/ja-netfilter-javaagent-lib.html)
