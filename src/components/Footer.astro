@@ -1,18 +1,26 @@
 ---
 import { Icon } from 'astro-icon/components';
 import {profileConfig, siteConfig} from "../config";
+import ImageWrapper from "./misc/ImageWrapper.astro";
 
 const year = new Date().getFullYear()
 
 ---
 
 <div class="card-base max-w-[var(--page-width)] min-h-[4.5rem] rounded-b-none mx-auto flex items-center px-6">
-    <div class="transition text-50 text-sm flex flex-col w-full text-center">
+    <div class="transition text-50 text-sm flex flex-col w-full text-center my-2 gap-1">
         <div class="flex justify-center items-center">
             © {year} {profileConfig.name} <Icon name="logo" size={"1rem"} class="ml-1" />
         </div>
         <div>
             <a class="text-[var(--primary)] font-medium" target="_blank" href="http://beian.miit.gov.cn/">{siteConfig.icp}</a>
+        </div>
+        <div class="flex justify-center items-center font-medium">
+            <span>本网站由</span>
+            <a target="_blank" style="margin-bottom: 2px;margin-left: 2px;margin-right: 1px;" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">
+                <ImageWrapper src='assets/images/upyun-logo.png'' alt="Cover Image of the Post" class="h-5"></ImageWrapper>
+            </a>
+            <span>提供CDN加速/云存储服务</spans>
         </div>
     </div>
 </div>
