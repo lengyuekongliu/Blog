@@ -14,7 +14,7 @@ export const siteConfig: SiteConfig = {
   icp: '粤ICP备2024236056号',
   banner: {
     enable: true,
-    src: 'https://saicaca.github.io/vivia-preview/assets/banner.jpg',
+    src: 'https://image.kongliu.net/banner.jpg',
   },
   favicon: [    // Leave this array empty to use the default favicon
     {
@@ -44,7 +44,7 @@ export const navBarConfig: NavBarConfig = {
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'https://saicaca.github.io/vivia-preview/assets/avatar.jpg',
+  avatar: 'https://image.kongliu.net/avatar.jpg',
   name: 'KongLiu',
   bio: '咸鱼/玩家/Coder',
   links: [
