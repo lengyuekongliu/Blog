@@ -25,7 +25,7 @@ actions/setup-node@v1.0    # 指向一个标签
 actions/setup-node@master  # 指向一个分支
 ```
 
-现在需要实现一个 Action，使其能够执行 hexo clean、hexo g -d 操作。
+现在需要实现一个 Action，使其能够执行`git pull`、`pnpm build` 操作。
 
 以下是我个人使用的配置文件
 
