@@ -2,7 +2,7 @@
 title: Simple Guides for Fuwari
 published: 2023-09-01
 description: "How to use this blog template."
-image: "https://fuwari.vercel.app/_astro/cover.CgGywNHJ_1wRFtk.webp"
+image: "http://image.kongliu.net/image/wallhaven-vqzq98.jpg"
 tags: ["Fuwari", "Blogging", "Customization"]
 category: Guides
 draft: false
