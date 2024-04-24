@@ -30,5 +30,26 @@ actions/setup-node@master  # 指向一个分支
 以下是我个人使用的配置文件
 
 ```yml
-# name
+name: Auto Deploy
+on:
+    push:
+        branches: main
+
+jobs:
+    deploy:
+        name: Deploy
+        runs-on: ubuntu-latest
+        environment: Deploy
+        steps:
+            - name: Remote SSH
+              uses: appleboy/ssh-action@v1.0.3
+              with:
+                host: ${{ secrets.SERVER_IP }}
+                username: ${{ secrets.USERNAME }}
+                key: ${{ secrets.SSH_PRIVATE_KEY }}
+                port: 22
+                script: |
+                    cd ~/blog
+                    pnpm build
+
 ```
