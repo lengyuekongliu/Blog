@@ -44,7 +44,7 @@ export const navBarConfig: NavBarConfig = {
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'https://image.kongliu.net/avatar.jpg',
+  avatar: 'https://image.kongliu.net/93ab733bc1ef6476b993f9e4c355f6cee4a18113.gif',
   name: 'KongLiu',
   bio: '咸鱼/玩家/Coder',
   links: [
