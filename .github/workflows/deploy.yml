@@ -1,7 +1,7 @@
 name: Auto Deploy
 on:
     push:
-        branches: main
+        branches: custom
 
 jobs:
     deploy:
@@ -19,5 +19,6 @@ jobs:
                 script: |
                     cd ~/blog
                     git pull
+                    pnpm install
                     pnpm build
 

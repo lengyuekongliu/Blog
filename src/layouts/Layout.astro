@@ -69,7 +69,7 @@ const favicons: Favicon[] = siteConfig.favicon.length > 0 ? siteConfig.favicon :
 ---
 
 <!DOCTYPE html>
-<html lang="zh-CN" isHome={isHomePage} pathname={testPathName} class="bg-[var(--page-bg)] transition text-[14px] md:text-[16px]">
+<html lang="zh-CN" isHome={isHomePage} pathname={testPathName} class="bg-[var(--page-bg)] transition dark text-[14px] md:text-[16px]">
 	<head>
 
 		<title>{pageTitle}</title>
@@ -149,7 +149,7 @@ import {
 	SizeObserverPlugin,
 	ClickScrollPlugin
 } from 'overlayscrollbars';
-import {getHue, setHue} from "../utils/setting-utils";
+import {getHue, getStoredTheme, setHue, setTheme} from "../utils/setting-utils";
 
 	/* Preload fonts */
 // (async function() {
@@ -203,7 +203,7 @@ function setClickOutsideToClose(panel: string, ignores: string[]) {
 				return;
 			}
 		}
-		panelDom.classList.add("closed");
+		panelDom.classList.add("float-panel-closed");
 	});
 }
 setClickOutsideToClose("display-setting", ["display-setting", "display-settings-switch"])
@@ -212,14 +212,8 @@ setClickOutsideToClose("search-panel", ["search-panel", "search-bar", "search-sw
 
 
 function loadTheme() {
-	if (localStorage.theme === 'dark' || (!('theme' in localStorage) &&
-		window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-		document.documentElement.classList.add('dark');
-		localStorage.theme = 'dark';
-	} else {
-		document.documentElement.classList.remove('dark');
-		localStorage.theme = 'light';
-	}
+	const theme = getStoredTheme()
+	setTheme(theme)
 }
 
 function loadHue() {
