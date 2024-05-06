@@ -10,7 +10,10 @@ export const siteConfig: SiteConfig = {
   title: 'KongLiu\'s Blog',
   subtitle: '咸鱼的日常',
   lang: 'zh_CN',
-  themeHue: 250,
+  themeColor: {
+    hue: 250,         // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
+    fixed: false,     // Hide the theme color picker for visitors
+  },
   icp: '粤ICP备2024236056号',
   banner: {
     enable: true,
